@@ -8,9 +8,6 @@ flowers = ['daisy','lily','orchid','rose','sunflower','tulip','marguerite','jasm
 #this funtion will chose randomly a word from the list
 def choose_word(flowers):
     word = random.choice(flowers)  # randomly chooses something from the list
-    while '-' in word or ' ' in word:
-        word = random.choice(flowers)
-
     return word.upper() #All in caps because lower and upper gives problems when mixed
 
 #Now I define the function for the user
